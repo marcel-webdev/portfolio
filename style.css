@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(0, 9, 19);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.body-container {
+    width: 100%;
+    max-width: 72rem;
+    padding: 0rem 1rem;
+}
+
+/** Header CSS */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+    font-size: 1.5rem;
+    transition: all 0.3s ease-out;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav .githubLogo {
+    width: 4rem;
+    z-index: 1001;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 10rem;
+    align-items: center;
+    margin-bottom: 8rem;
+    padding-top: 10rem;
+}
+
+.hero .hero-text h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .hero-text p span {
+    font-weight: bold;
+}
+
+.hero .hero-text .social-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.hero .hero-text button {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 0.5px rgb(100, 100, 100) solid;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.hero .hero-text button:hover{
+    color: rgb(0, 9, 19);
+    background-color: white;
+}
+
+.hero .hero-text .social-links a img{
+    width: 4rem;
+}
+
+.hero .hero-img img{
+    width: 100%;
+}
+
+/** Main CSS */
+
+.work-section {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.work-experience {
+    border: 1px rgba(156, 163, 175, 0.233) solid;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+}
+
+.work-title-div{
+    width: 100%;
+    background-color: rgba(156, 163, 175, 0.233);
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.work-title-div .title {
+    background-color: rgb(0, 9, 19);
+    font-weight: 500;
+    padding: 0.5rem 0rem;
+    border-radius: 1rem;
+}
+
+.experience {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr;
+}
+
+.experience-text h3{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.experience-text .position-date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: rgb(161, 161, 161);
+    margin-bottom: 1rem;
+}
+
+.experience-text ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.experience-text ul li {
+    font-size: 1.5rem;
+    padding-left: 2.1rem;
+    text-indent: -2.1rem;
+}
+
+
+.experience-text ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.experience:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+
+.education-section {
+    width: 100%;
+}
+
+.education-experience {
+    border: 1px rgba(156, 163, 175, 0.233) solid;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+}
+
+.education-title-div{
+    width: 100%;
+    background-color: rgba(156, 163, 175, 0.233);
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.education-title-div .title {
+    background-color: rgb(0, 9, 19);
+    font-weight: 500;
+    padding: 0.5rem 0rem;
+    border-radius: 1rem;
+}
+
+.education {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr;
+}
+
+.education-text h3{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.education-text .position-date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: rgb(161, 161, 161);
+    margin-bottom: 1rem;
+}
+
+.education-text ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.education-text ul li {
+    font-size: 1.5rem;
+    padding-left: 2.1rem;
+    text-indent: -2.1rem;
+}
+
+
+.education-text ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.education:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.projects-section {
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+}
+
+.projects-section .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.projects-section .title h2 {
+    font-size: 3rem;
+}
+
+.projects-section .title a {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+    transition: all 0.3s ease-out;
+}
+
+.projects-section .title a:hover {
+    color: white;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.project-cards .card {
+    border: 1px rgba(156, 163, 175, 0.233) solid;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.project-cards .card img {
+    border-radius: .2rem;
+    margin-bottom: 2rem;
+}
+
+.project-cards .card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-cards .card p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.project-cards .card button{
+    width: fit-content;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(156, 163, 175, 0.233);
+    color: white;
+    padding: .3rem .4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.project-cards .card a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px white solid;
+    width: fit-content;
+    padding: 0.7rem 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+}
+
+.project-cards .card a:hover {
+    background-color: rgb(0, 9, 19);
+    color: white;
+    border: 1px white solid;
+}
+
+/** Footer CSS */
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.footer-section .footer-links a img{
+    width: 4rem;
+}
+
+.footer-section .footer-links a:not(:last-child){
+    margin-right: 1.5rem;
+}
+
+/** Media Queries */
+
+@media (max-width: 48rem) {
+    .hero {
+        grid-template-columns: 1fr;
+        margin-bottom: 5rem;
+        gap: 0;
+        padding-top: 5rem;
+    }
+    .hero-img {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 45rem) {
+    .body-container {
+        max-width: 65rem;
+    }
+}
+
+@media (max-width: 37rem) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 32rem) {
+    .project-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

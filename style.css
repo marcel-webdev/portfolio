@@ -88,10 +88,11 @@ nav .githubLogo {
     margin-top: 3rem;
 }
 
-.hero .hero-text button {
+.hero .hero-text .download-resume {
     background-color: transparent;
     color: white;
     font-weight: bold;
+    font-size: 15px;
     border: 0.5px rgb(100, 100, 100) solid;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
@@ -99,10 +100,16 @@ nav .githubLogo {
     transition: all 0.3s ease-out;
 }
 
-.hero .hero-text button:hover{
+.hero .hero-text .download-resume {
+    text-decoration: none;
+    color: white;
+}
+
+.hero .hero-text .download-resume:hover{
     color: rgb(0, 9, 19);
     background-color: white;
 }
+
 
 .hero .hero-text .social-links a img{
     width: 4rem;
